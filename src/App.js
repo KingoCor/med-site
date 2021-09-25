@@ -16,7 +16,7 @@ const Header = () => (
 		<h1>Formed</h1>
 		
 		<div>
-			<p> Поиск по названию <input></input> </p>
+			<p> <input></input>  <button>Поиск</button> </p>
 
 			<button>Поиск по симптомам</button>
 		</div>
