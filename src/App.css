@@ -1,1 +1,8 @@
-
+header {
+    text-align: center;
+    letter-spacing: 0.5px;
+    height: 10em;
+    padding: 3em 10%;
+    background-image: url(material/header.jpg);
+    color: #fff;
+}
