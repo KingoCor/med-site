@@ -10,6 +10,8 @@
 
 body {
 	margin: 0;
+	background-image: url(material/background.jpg);
+	background-repeat: repeat;
 }
 
 header {
@@ -17,7 +19,7 @@ header {
     letter-spacing: 5px;
     height: 10em;
     padding: 2em 5%;
-    background-image: url(material/header.jpg);
+    background-image: url(material/header.jpg);	 
     color: #04396C;
 	 font: 24pt bold;
 
