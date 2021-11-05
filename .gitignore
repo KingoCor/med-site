@@ -1,7 +1,9 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-/node_modules
+server/node_modules/*
+client/node_modules/*
+node_mdules
 /.pnp
 .pnp.js
 
@@ -13,6 +15,7 @@
 /build
 
 # misc
+default.json
 .DS_Store
 .env.local
 .env.development.local
