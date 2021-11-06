@@ -3,7 +3,8 @@ import Home from "./Home";
 import Article from "./Article";
 import Search from "./Search";
 import Search_by_tag from "./Search_by_tag";
-import {Route, Link} from "react-router-dom"
+import {Route, Link} from "react-router-dom";
+import {get_articles} from "./actions/article.js";
 
 const App = () => (
 	<div>
@@ -16,6 +17,8 @@ const App = () => (
 	</div>
   );
 
+let search_input=""
+
 const Header = () => (
 	<header>
 
@@ -23,9 +26,9 @@ const Header = () => (
 
 		<div>
 			<p> 
-				<input></input> 
+				<input onChange={ (event) => {search_input=event.target.value} }></input> 
 				<Link to={"/Search"}> 
-					<button>Поиск</button> 
+					<button onClick={GetArticles}>Поиск</button> 
 				</Link>
 			</p>
 			
@@ -37,4 +40,15 @@ const Header = () => (
 	</header>
 );
 
+let articles = {message:"None"}
+const GetArticles = () => {
+	const SetArticles = (val) => {
+		articles=val
+	}
+
+	get_articles(search_input, 0, 100).then((res)=>{SetArticles(res)})
+	console.log(articles)
+}
+
 export default App;
+export {articles}
