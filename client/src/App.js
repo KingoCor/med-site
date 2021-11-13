@@ -2,7 +2,6 @@ import React from "react";
 import Home from "./Home";
 import Article from "./Article";
 import Search from "./Search";
-import Search_by_tag from "./Search_by_tag";
 import {Route, Link} from "react-router-dom";
 import {get_articles} from "./actions/article.js";
 
@@ -13,7 +12,6 @@ const App = () => (
 		<Route path="/" exact component={Home} />
 		<Route path="/Article" component={Article} />
 		<Route path="/Search" component={Search} />
-		<Route path="/Search_by_tag" component={Search_by_tag} />
 	</div>
   );
 
