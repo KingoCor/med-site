@@ -2,17 +2,15 @@ import React from "react"
 import "./App.css";
 import {useLocation} from "react-router-dom";
 
-const location = useLocation();
-const id = location.pathname.split("/");
+const Article = () => { 
+    const location = useLocation();
+    const id = location.pathname.split("/");
 
-import article from "./articles/"+id[id.length-1];
-
-const Article = () => (
-
-	<div>
-		<iframe src={article}/>
-	</div>
-
-  );
+    return(
+    <div>
+        <iframe src={require(`./articles/${id[id.length-1]}`).default}/>
+    </div>
+    )
+};
 
 export default Article;
