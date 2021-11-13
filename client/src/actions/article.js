@@ -1,9 +1,10 @@
 import axios from 'axios'
+import  {API_URL} from "../config" 
 
 export const get_articles = async (search_input, skip, count) => {
 	try 
 	{
-		const response = await axios.post('http://localhost:20000/api/article-methods/get-articles', 
+		const response = await axios.post(API_URL+'api/article-methods/get-articles', 
 		{
 			"search_input": search_input,
 			"skip": skip,

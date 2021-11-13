@@ -31,10 +31,6 @@ const Header = () => (
 					<button onClick={GetArticles}>Поиск</button> 
 				</Link>
 			</p>
-			
-			<Link to={"/Search_by_tag"}>
-				<button>Поиск по симптомам</button>
-			</Link>
 		</div>
 
 	</header>
