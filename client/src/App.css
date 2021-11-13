@@ -61,23 +61,16 @@ input {
 	background-color: rgba(255,255,255,0.65);
 }
 
-.article-preview {
-	margin: 50px;
-	width: 95%;
-
-	font-size: 10pt;
-
-	padding: 5px;
-}
-
 blockquote {
-    margin: 300;
+    margin: 10px;
     background-color: rgba(255,255,255,0.8);
     color: #000000;
-    padding: 45px 45px 45px 45px;
+    padding: 10px 10px 10px 10px;
 
 	border-radius: 4pt;
     text-align: center;
+
+    font-size: 8pt;
 }
 
 blockquote.foot {
@@ -91,4 +84,13 @@ blockquote.foot {
 
 img {
     width: 25%;
+}
+
+iframe {
+    width:100%;
+
+    overflow: visible;
+    border: none;
+    position: absolute; 
+    height: 100%;
 }
