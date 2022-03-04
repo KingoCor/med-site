@@ -4,7 +4,7 @@ const mongoose = require("mongoose")
 const config = require("config")
 
 const app = express()
-const PORT = config.get('serverPort')
+const PORT = process.env.PORT || config.get('serverPort')
 const corsMiddleware = require('./middleware/cors.middleware')
 
 const articleMethods = require("./routes/article_metdos.routes")
